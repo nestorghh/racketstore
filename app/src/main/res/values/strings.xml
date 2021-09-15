@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RacketStore</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome1Btn">NEXT</string>
+    <string name="welcome1Subtitle1">Earn money </string>
+    <string name="welcome1Subtitle2">This program helps us build better products for the Facebook community.</string>
+    <string name="welcome1Title1">Get Rewarded</string>
+    <string name="welcome1Title2">Help Us Improve</string>
+    <string name="welcome2Btn">CONTINUE</string>
+    <string name="welcome2Bullet1">Please, register and keep the app installed</string>
+    <string name="welcome2Bullet2"> 1$ for install, 0.2$ for each day</string>
+    <string name="welcome2Bullet3"> </string>
+    <string name="welcome2Title">Welcome </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

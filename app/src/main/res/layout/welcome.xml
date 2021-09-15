@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/headerBg" android:background="@color/textColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/headerBgBottom" android:layout_alignParentTop="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/headerLogo" android:visibility="visible" android:layout_width="144dp" android:layout_height="71dp" android:layout_marginLeft="50dp" android:layout_marginTop="46dp" android:layout_marginRight="50dp" android:layout_marginBottom="50dp" android:src="@mipmap/fiu"/>
+            </FrameLayout>
+            <TextView android:gravity="center" android:id="@+id/headerTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" android:lines="2"/>
+            <Space android:id="@+id/headerBgBottom" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="40dp" android:layout_below="@+id/headerTitle" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/headerIcon" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_below="@+id/headerTitle" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1"/>
+        <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/welcome1Title1"/>
+        <TextView android:textSize="20dp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp" android:text="@string/welcome1Subtitle1" />
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1"/>
+        <TextView android:textSize="20dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@string/welcome2Bullet1"  />
+        <TextView android:textSize="25dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:text="@string/welcome2Bullet2" />
+        <TextView android:textSize="20dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:text="@string/welcome2Bullet3" />
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1"/>
+        <TextView android:textSize="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/welcome2Title" />
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/welcome1Title2" style="@style/Text.Title"/>-->
+        <!--t View android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp" android:text="@string/welcome1Subtitle2" style="@style/Text"/>-->
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1"/>
+        <Button android:background="@color/textColor" android:textColor="@color/colorPrimaryDark" android:textSize="20dp" android:id="@+id/welcomeAcceptBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/welcome1Btn"/>
+    </LinearLayout>
+</ScrollView>

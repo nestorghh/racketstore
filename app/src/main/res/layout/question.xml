@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="https://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/textColor"
+        />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text=""
+        android:textSize="35dp"
+        android:layout_below="@+id/toolbar"
+        />
+
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Answer"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:text=""
+        />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="50dp"
+        facebook:titleTextColor="@color/textColor"
+        android:id="@+id/toolbar"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

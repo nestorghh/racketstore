@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="https://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/textColor"
+        />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="25dp"
+        android:textSize="35dp"
+        android:text=""
+        android:layout_below="@+id/toolbar"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/question"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/bno"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:shadowColor="@color/textColor"
+            android:text="NO" />
+
+        <RadioButton
+            android:id="@+id/byes"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="YES" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="50dp"
+        facebook:titleTextColor="@color/textColor"
+        android:id="@+id/toolbar"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
